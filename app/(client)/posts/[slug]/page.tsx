@@ -54,7 +54,7 @@ export default async function page({ params }: Params) {
       <div className="mt-5">
         {post?.tags?.map((tag) => {
           return (
-            <Link key={tag?._id} href={`tag/${tag.slug.current}`}>
+            <Link key={tag?._id} href={`../tag/${tag.slug.current}`}>
               <span className="mr-2 p-1 dark:text-purple3 lowercase hover:dark:text-purple1">
                 #{tag.name}
               </span>
